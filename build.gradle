@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    //id 'org.springframework.boot' version '2.7.5'
+    //implementation 'org.springframework.boot:spring-boot-starter-web:1.2.4.release'
+}
+
+group 'fun.armodels'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.1.4'
+
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation 'io.springfox:springfox-swagger2:3.0.0'
+
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    //implementation 'org.springframework:spring-context:6.0.13'
+}
+
+/*plugins {
+    id 'org.springframework.boot' version '2.7.5'
+}*/
+
+test {
+    useJUnitPlatform()
+}
